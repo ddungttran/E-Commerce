@@ -30,7 +30,15 @@ html {
   min-height: 100vh;
   padding-bottom: 5rem;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+
+a:hover {
+  text-decoration: none;
+}
 .header {
   grid-column: 1/-1;
   grid-row: 1/2;
