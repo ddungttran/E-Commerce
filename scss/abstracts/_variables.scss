@@ -1,0 +1,20 @@
+$colors: (
+    primary: #000000,
+    secondary: #e1d9cf,
+    tertiary:#c6af99,
+    quaternary:#af9a8b
+);
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.2rem,
+    xs: 1rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}

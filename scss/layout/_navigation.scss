@@ -1,0 +1,15 @@
+.first-nav {
+    grid-column: 3 / 8;
+    grid-row: 3 / 4;
+    @include navigation;
+
+    @include response(lg){
+        grid-column: 2 / 9;
+     }
+     @include response(md) {
+        grid-column: 1/ -1;
+    }
+}
+.dropdown {
+    display: none;
+}
