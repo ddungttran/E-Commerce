@@ -1,80 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-    <title>Furniture Store</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
   </head>
   <body>
-    <!-- Header Section -->
     <div class="container">
-      <header class="header">
-        <nav class="first-nav">
-          <ul class="first-nav-list">
-            <li class="first-nav-item">
-              <a href="#" class="first-nav-link">
-                <i class="search"></i>
-                Search
-              </a>
-            </li>
-            <li class="first-nav-item">
-              <a href="/products.html" class="first-nav-link"> Products </a>
-            </li>
-            <li class="first-nav-item">
-              <a href="/contact.html" class="first-nav-link"> Contact Us </a>
-            </li>
-            <li class="first-nav-item">
-              <a href="#" class="first-nav-link"> Sign In </a>
-            </li>
-            <li class="first-nav-item">
-              <a href="#" class="first-nav-link">
-                <i class="fas fa-shopping-cart">(0)</i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="heading">
-          <h1 class="heading-text">
-            <a href="/index.html" class="home-link">Furniture Store</a>
-          </h1>
-        </div>
-      </header>
-      <!-- Slideshow -->
-      <section class="slideshow">
-        <div class="slideshow-slide">
-          <div class="slideshow-content">
-            <h2><a href="/products.html" class="slide-link">Shop Here</a></h2>
+        <header class="header">
+          <nav class="first-nav">
+            <ul class="first-nav-list">
+              <li class="first-nav-item">
+                <a href="#" class="first-nav-link">
+                  <i class="search"></i>
+                  Search
+                </a>
+              </li>
+              <li class="first-nav-item">
+                <a href="/products.html" class="first-nav-link"> Products </a>
+              </li>
+              <li class="first-nav-item">
+                <a href="/index.html#contact" class="first-nav-link">
+                  Contact Us
+                </a>
+              </li>
+              <li class="first-nav-item">
+                <a href="#" class="first-nav-link"> Sign In </a>
+              </li>
+              <li class="first-nav-item">
+                <a href="#" class="first-nav-link">
+                  <i class="fas fa-shopping-cart">(0)</i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="heading">
+            <h1 class="heading-text">
+              <a href="/index.html" class="home-link">Furniture Store</a>
+            </h1>
           </div>
-          <img src="images/Mroom.png" alt="Slide 1" />
-        </div>
-        <div class="slideshow-slide">
-          <div class="slideshow-content">
-            <h2><a href="/products.html" class="slide-link">Shop Here</a></h2>
-          </div>
-          <img src="images/pic1.webp" alt="Slide 2" />
-        </div>
-        <div class="slideshow-slide">
-          <div class="slideshow-content">
-            <h2><a href="/products.html" class="slide-link">Shop Here</a></h2>
-          </div>
-          <img src="images/pic2.webp" alt="Slide 3" />
-        </div>
-        <div class="slideshow-slide">
-          <div class="slideshow-content">
-            <h2><a href="/products.html" class="slide-link">Shop Here</a></h2>
-          </div>
-          <img src="images/pic3.webp" alt="Slide 4" />
-        </div>
-      </section>
+      </div>
 
-      <!-- End of Slideshow -->
-      <!-- Footer Section -->
-      <footer class="footer">
+      <div class="contact-box">
+        <h2>Contact Us</h2>
+        <input type="text" class="field" id="name" name="name" placeholder="Your Name" />
+        <span id="name-error" class="error-message"></span>
+    
+        <input type="email" class="field" id="email" name="email" placeholder="Your Email" />
+        <span id="email-error" class="error-message"></span>
+    
+        <input type="tel" class="field" id="phone" name="phone" placeholder="Phone" />
+        <span id="phone-error" class="error-message"></span>
+    
+        <textarea rows="5" cols="60" class="field" id="message" name="message" placeholder="Message"></textarea>
+        <span id="message-error" class="error-message"></span>
+    
+        <button class="btn" onclick="validateForm()">Send Message</button>
+    </div>
+    
+    <footer class="footer">
         <div class="footer-nav-wrapper">
           <h3 class="footer-nav-heading">More Info</h3>
           <ul class="footer-nav">
@@ -91,7 +83,7 @@
               <a href="#" class="footer-nav-link">Privacy Policy</a>
             </li>
             <li class="footer-nav">
-              <a href="/contact.html" class="footer-nav-link">Contact Us</a>
+              <a href="#" class="footer-nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -132,22 +124,22 @@
           <ul class="social-icons">
             <li class="social-icons-item">
               <a href="#" class="social-icons-link">
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="facebook">1</i>
               </a>
             </li>
             <li class="social-icons-item">
               <a href="#" class="social-icons-link">
-                <i class="fa-brands fa-google"></i>
+                <i class="google">1</i>
               </a>
             </li>
             <li class="social-icons-item">
               <a href="#" class="social-icons-link">
-                <i class="fa-brands fa-twitter"></i>
+                <i class="twitter">1</i>
               </a>
             </li>
             <li class="social-icons-item">
               <a href="#" class="social-icons-link">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="instagram">1</i>
               </a>
             </li>
           </ul>
@@ -170,7 +162,6 @@
           </ul>
         </div>
       </footer>
-    </div>
-    <script src="/validate.js"></script>
+      <script src="/contact.js"></script>
   </body>
 </html>

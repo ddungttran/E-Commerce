@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
     <title>Products</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="style.css" />
@@ -32,8 +36,7 @@
             </li>
             <li class="first-nav-item">
               <a href="#" class="first-nav-link">
-                <i class="shopping-cart"></i>
-                (0)
+                <i class="fas fa-shopping-cart">(0)</i>
               </a>
             </li>
           </ul>
@@ -43,12 +46,111 @@
             <a href="/index.html" class="home-link">Furniture Store</a>
           </h1>
         </div>
+    </div>
       </header>
       <!-- End Header Section -->
       <!-- Products Section -->
-      <div class="products"></div>
+      <div class="product-container">
+        <div class="products"></div>
+      </div>
       <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-nav-wrapper">
+          <h3 class="footer-nav-heading">More Info</h3>
+          <ul class="footer-nav">
+            <li class="footer-nav">
+              <a href="#" class="footer-nav-link">Company</a>
+            </li>
+            <li class="footer-nav">
+              <a href="#" class="footer-nav-link">Sales</a>
+            </li>
+            <li class="footer-nav">
+              <a href="#" class="footer-nav-link">Returns</a>
+            </li>
+            <li class="footer-nav">
+              <a href="#" class="footer-nav-link">Privacy Policy</a>
+            </li>
+            <li class="footer-nav">
+              <a href="#" class="footer-nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact" id="contact">
+          <h2 class="contact-heading">Sign up for Newspaper</h2>
+          <p class="contact-paragraph">
+            We’re solving the biggest problems in furniture
+          </p>
+          <form id="signupForm">
+            <div class="inputs-group">
+              <input
+                type="text"
+                id="firstName"
+                class="input-group-text"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                id="lastName"
+                class="input-group-text"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="inputs-group">
+              <input
+                type="email"
+                id="email"
+                class="inputs-group-email"
+                placeholder="Your Email Address"
+              />
+              <input type="submit" class="inputs-group-btn" value="Sign Up" />
+            </div>
+            <p id="error-message" style="color: red; display: none">
+              Please fill out all fields correctly.
+            </p>
+          </form>
+
+          <ul class="social-icons">
+            <li class="social-icons-item">
+              <a href="#" class="social-icons-link">
+                <i class="facebook">1</i>
+              </a>
+            </li>
+            <li class="social-icons-item">
+              <a href="#" class="social-icons-link">
+                <i class="google">1</i>
+              </a>
+            </li>
+            <li class="social-icons-item">
+              <a href="#" class="social-icons-link">
+                <i class="twitter">1</i>
+              </a>
+            </li>
+            <li class="social-icons-item">
+              <a href="#" class="social-icons-link">
+                <i class="instagram">1</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-list-wrapper">
+          <h3 class="contact-list-heading">Furniture Store</h3>
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <a href="#" class="contact-list-link"> 555 6666 7777 </a>
+            </li>
+            <li class="contact-list-item">
+              <a href="#" class="contact-list-link"> info@gmail.com </a>
+            </li>
+            <li class="contact-list-item">
+              <a href="#" class="contact-list-link"> Charlotte, NC </a>
+            </li>
+            <li class="contact-list-item">
+              <a href="#" class="contact-list-link"> Free US Delivery </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
       <script src="script.js"></script>
-    </div>
+      <script src="validate.js"></script>
   </body>
 </html>
